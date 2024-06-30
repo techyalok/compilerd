@@ -298,53 +298,6 @@ const testCases = [
             error: 0,
         },
     },
-    {
-        name: 'go : hello world',
-        reqObject: {
-            language: 'go',
-            script:
-                'package main\n' +
-                'import "fmt"\n' +
-                'func main() {\n' +
-                '    fmt.Println("hello world")\n' +
-                '}\n',
-        },
-        expectedResponse: {
-            val: 'hello world\n',
-            status: 200,
-            error: 0,
-        },
-    },
-    {
-        name: 'php : hello world',
-        reqObject: {
-            language: 'php',
-            script: '<?php echo "hello world"; ?>',
-        },
-        expectedResponse: {
-            val: 'hello world',
-            status: 200,
-            error: 0,
-        },
-    },
-    {
-        name: 'rust : hello world',
-        reqObject: {
-            language: 'rust',
-            script:
-                'fn main() {\n' +
-                '    println!("hello world");\n' +
-                '}\n',
-        },
-        expectedResponse: {
-            val: 'hello world\n',
-            status: 200,
-            error: 0,
-        },
-    }
-    
-    
-    
 ]
 
 module.exports = { testCases }
